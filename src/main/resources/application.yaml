@@ -6,8 +6,12 @@ spring:
     password: ${DBMS_PASSWORD:123}
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
 
 server:
   port: 5555
